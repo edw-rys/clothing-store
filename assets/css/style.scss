@@ -1,8 +1,15 @@
+
+// Mixin
+@mixin flex-center {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .button{
     display: inline-block;
     padding: 10px;
     color: var(--color-txt);
-    background: var(--color-btn);
     box-shadow: 0 3px 3px var(--box-shadow);
     border-radius: 20px;
     background: var(--color-btn);
@@ -15,7 +22,6 @@
         display: flex;
         ._logo{
             display: flex;
-            // width: 60%;
             p{
                 font-size: 2em;
             }
@@ -29,7 +35,6 @@
         }
     }
     nav.navbar{
-        // display: none;
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.6s;
@@ -182,6 +187,7 @@
     } 
 }
 
+
 ._characteristics{
     padding: 5px;
     border-radius: 10px;
@@ -195,16 +201,11 @@
 }
 @media(min-width: 750px){
     ._header{
-        // display: flex;
-        // justify-content: space-between;
         .bars{
             display: none;
         }
         nav.navbar{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // display: none;
+            @include flex-center;
             overflow: initial;
             max-height: 100vh;
             ul{
@@ -215,16 +216,13 @@
                     margin-right: 20px;
                     height: 100%;
                 }
-                // width: 100%;
                 li{
                     padding: 8px 10px;
                     &:not([class="l-sub-l"]){
                         padding: 8px 30px;
                         height: 40px;
                     }
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex-center;
                     position: relative;
                     border-bottom:  none; 
                     .l-sub{

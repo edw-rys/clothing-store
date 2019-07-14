@@ -2,7 +2,6 @@
   display: inline-block;
   padding: 10px;
   color: var(--color-txt);
-  background: var(--color-btn);
   -webkit-box-shadow: 0 3px 3px var(--box-shadow);
   box-shadow: 0 3px 3px var(--box-shadow);
   border-radius: 20px;

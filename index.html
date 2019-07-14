@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="_header bck-purple txt-white">
+            <div class="_h flex space-btw bck-second">
+                <div class="vaio"></div>
+                <span class="bars flex-center" onclick="toggle('.navbar','active')">
+                    <i class="fa fa-bars"></i>
+                </span>
+                <div class="_logo  flex-center">
+                    <img src="assets/img/ico.png" alt="logo">
+                    <p class="bold flex-center">
+                        <span class="blue">T</span>
+                        <span class="cyan">N</span>
+                        <span class="pink">X</span>
+                    </p>
+                </div>
+                <div class="_userbuy icon-purple-active">
+                    <div class="user">
+                        <a href="#!" onclick="toggle('.user .operation','active');"><i class="far fa-user"></i></a>
+                        <div class="operation bck-white rombo">
+                            <ul class="l-s-none float-panel">
+                                <li class="bck-purple-sub"><a href="">Ingresar</a></li>
+                                <li class="txt-black"><a href="">Registrarse</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="car" href="">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="count">0</span>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="menu">
+                <nav class="navbar">
+                    <ul class="l-s-none">
+                        <li><a href="">Indice</a></li>
+                        <li><a href="">About</a></li>
+                        <li>
+                            <a href="#!">Mujer</a>
+                            <ul class="l-s-none l-sub bck-purple-sub rombo">
+                                <li class="l-sub-l"><a href="">Gorras</a></li>
+                                <li class="l-sub-l"><a href="">Camisas/Camisetas</a></li>
+                                <li class="l-sub-l"><a href="">Zapatos</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Hombre</a>
+                            <ul class="l-s-none l-sub bck-purple-sub rombo">
+                                <li class="l-sub-l"><a href="">Gorras</a></li>
+                                <li class="l-sub-l"><a href="">Camisas/Camisetas</a></li>
+                                <li class="l-sub-l"><a href="">Zapatos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="_content flex-center">
+            <div class="_advertising">
+                <div class="_banner flex-center flex-y  space-around txt-white">
+                    <h1 class="line-tittle">Store TNX TIM</h1>
+                    <a class="txt-dc-none button gradient-pink" href="">Empieza ahora</a>
+                </div>
+                <div class="_pictures">
+                    <ul class="l-s-none list-picture-banner flex-center flex-y icon-purple-active">
+                        <li class="">
+                            <div class="picture flex-center"><img src="assets/img/pictures/shoes/shoes-m.png" alt="zapato"></div>
+                            <div class=" abs-top">
+                                <a href="#!" onclick="animationCharacteristic(this,1,'hidden')" class="inline-block info"><i class="fas fa-plus"></i></a>
+                                <div class="hidden _characteristics float-panel bck-white">
+                                    <div class="_head flex space-btw">
+                                        <p class="name">Zapato xd</p>
+                                        <span class="bck-pink txt-white">New</span>
+                                    </div>
+                                    <div class="_body">
+                                        <span class="price txt-purple-active">$ 125.99</span>
+                                        <p class="text txt-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, facere!</p>
+                                        <a class="button block txt-dc-none btn-pink txt-white" href=""><i class="fas fa-cart-plus"></i> Añadir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="picture flex-center"><img src="assets/img/pictures/shoes/shoes-m-1.png" alt="zapato"></div>
+                            <div class=" abs-top">
+                                <a href="#!" onclick="animationCharacteristic(this,1,'hidden')" class="inline-block info"><i class="fas fa-plus"></i></a>                                
+                                <div class="hidden _characteristics float-panel bck-white">
+                                    <div class="_head flex space-btw">
+                                        <p class="name">Zapato xd</p>
+                                        <span class="bck-pink txt-white">New</span>
+                                    </div>
+                                    <div class="_body">
+                                        <span class="price txt-purple-active">$ 125.99</span>
+                                        <p class="text txt-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, facere!</p>
+                                        <a class="button block txt-dc-none btn-pink txt-white" href=""><i class="fas fa-cart-plus"></i> Añadir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="picture flex-center"><img src="assets/img/pictures/prenda/choma-f-1.png" alt="chompa"></div>
+                            <div class=" abs-top">
+                                <a href="#!" onclick="animationCharacteristic(this,1,'hidden')" class="inline-block info"><i class="fas fa-plus"></i></a>
+                                <div class="hidden _characteristics float-panel bck-white">
+                                    <div class="_head flex space-btw">
+                                        <p class="name">Zapato xd</p>
+                                        <span class="bck-pink txt-white">New</span>
+                                    </div>
+                                    <div class="_body">
+                                        <span class="price txt-purple-active">$ 125.99</span>
+                                        <p class="text txt-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, facere!</p>
+                                        <a class="button block txt-dc-none btn-pink txt-white" href=""><i class="fas fa-cart-plus"></i> Añadir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="_names">
+                    <ul class="l-s-none">
+                        <li><a class="enable" href="#!" onclick="changePictureBanner(0, this)">Zapato Militar</a></li>
+                        <li><a class="" href="#!" onclick="changePictureBanner(1,this)">Zapato deportivo</a></li>
+                        <li><a class="" href="#!" onclick="changePictureBanner(2, this)">Chompa Rosa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        var changePictureBanner=(index,_a)=>{
+            for(var a of _a.parentNode.parentNode.children)
+                a.children[0].classList.remove("enable");
+
+            _a.classList.add("enable");
+            var ul=document.querySelector('._pictures .list-picture-banner');
+            var marginTop=250;
+            if(screen.width>750) marginTop=350;
+            ul.style.marginTop=(marginTop*-1*index)+"px";
+        }
+    </script>
+</body>
+</html>
